@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh Menu Sidebar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        display: block;
+      }
+      .sidebar a:hover {
+        background-color: #ddd;
+      }
+      .main {
+        margin-left: 200px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main">
+      <h1>Contoh Menu Sidebar</h1>
+      <p>
+        Selamat datang di contoh menu sidebar. Klik salah satu link di sidebar
+        untuk membuka konten di sebelah kanannya.
+      </p>
+      <div id="home">
+        <h2>Home</h2>
+        <p>Ini adalah halaman home.</p>
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p>Ini adalah halaman about.</p>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>Ini adalah halaman contact.</p>
+      </div>
+    </div>
+  </body>
+</html>
