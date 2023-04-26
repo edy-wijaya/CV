@@ -1,0 +1,165 @@
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between; */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+  /* display: flex; */
+  flex: 2;
+  align-items: center;
+  text-align: center; /* Mengatur gambar ke tengah */
+
+}
+.hd-link {
+  height: 80px;
+  display: inline-block; /* Menyusun gambar secara horizontal */
+  margin: 10px; /* Memberikan margin pada gambar */
+  align-items: center;
+  cursor: pointer;
+  text-align: center; /* Mengatur gambar ke tengah */
+  /* margin-bottom: 2px; */
+}
+
+.hd-link:hover {
+  background-color: rgb(226, 223, 223);
+}
+
+.hd-link img {
+  text-align: center; /* Mengatur gambar ke tengah */
+  height: 40px;
+  margin-top: 5px;
+}
+
+.hd-link div {
+  font-size: 11px;
+}
+
+.middle-section {
+  flex: 1;
+  align-items:center;
+  text-align:right;
+}
+.naga {
+  height: 55px;
+  margin-top: 10px;
+}
+.naga2 {
+  height: 60px;
+  margin-top: 10px;
+}
+
+.right-section {
+  /* width: 180px; */
+  flex: 1;
+  /* text-align: left; */
+  margin-left: 10%;
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-between; */
+  /* flex-shrink: 0; */
+}
+
+.me_icon {
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+/* -----------MOBILE PHONE max 600px --------------- */
+@media screen and (max-width: 768px) {
+  .me_icon {
+    float: right;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .header {
+    height: 80px;
+    display: flex;
+    position: relative;
+  }
+  
+  .left-section {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .middle-section {
+    z-index: 0;
+  }
+  .hd-link {
+    height: 0px;
+    display: inline-block; /* Menyusun gambar secara horizontal */
+    margin: 10px; /* Memberikan margin pada gambar */
+    align-items: center;
+    cursor: pointer;
+    text-align: center; /* Mengatur gambar ke tengah */
+    /* margin-bottom: 2px; */
+  }
+  .hd-link div {
+    font-size: 11px;
+  }
+  .hd-link img {
+    text-align: center; /* Mengatur gambar ke tengah */
+    height: 30px;
+    margin-top: 0px;
+  }
+  .naga {
+    height: 0px;
+  }
+  .naga2 {
+    height: 0px;
+  }
+}
+
+/* --------- TABLET----------- */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Gaya CSS untuk layar dengan lebar antara 768px dan 992px */
+    
+  .left-section {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .middle-section {
+    z-index: 0;
+  }
+  .hd-link {
+    height: 0px;
+    display: inline-block; /* Menyusun gambar secara horizontal */
+    margin: 10px; /* Memberikan margin pada gambar */
+    align-items: center;
+    cursor: pointer;
+    text-align: center; /* Mengatur gambar ke tengah */
+    /* margin-bottom: 2px; */
+  }
+  .hd-link div {
+    font-size: 11px;
+  }
+  .hd-link img {
+    text-align: center; /* Mengatur gambar ke tengah */
+    height: 30px;
+    margin-top: 0px;
+  }
+  .naga {
+    height: 0px;
+  }
+  .naga2 {
+    height: 0px;
+  }
+}
